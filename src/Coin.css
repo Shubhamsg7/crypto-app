@@ -1,0 +1,32 @@
+.card{
+  background: #ff00cc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(30deg, #ff00cc, #333399); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(30deg, #ff00cc, #333399); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 15px;
+  position: relative;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+.card img{
+  width:100px;
+  height: 100px;
+  position: absolute;
+  top: -50px;
+  right: 28%;
+  background: #fff;
+  padding: 10px;
+  border-radius: 15px;
+  
+}
+
+.card:hover{
+  transform: translateY(-20px);
+  box-shadow: 0 10px 20px rgba(255, 0, 204,.5);
+}
+
+@media only screen and (max-width: 600px) {
+  .card img{
+    right: 35%;
+  }
+}
